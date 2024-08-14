@@ -1,0 +1,12 @@
+:root{
+  --theme-primary-color: #E7503E;
+  --theme-background: #E6E7EB;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: var(--theme-background) !important;
+}

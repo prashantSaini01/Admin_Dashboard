@@ -1,0 +1,46 @@
+.main-height{
+    height: 100vh !important;
+}
+
+.login-right-card{
+    background-color: var(--theme-primary-color);
+    height: 100%;
+}
+
+.login-left-card{
+    height: 70vh;
+}
+
+.divider{
+    position: relative;
+}
+
+.divider .line{
+    height: 1px;
+    background-color: gray;
+    top: 13px;
+    position: relative;
+}
+
+.divider .text{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline;
+    background-color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: gray;
+}
+
+.form-control{
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-radius: 0 !important;
+    padding-left: 0 !important;
+}
+
+.form-control:focus{
+    box-shadow: none !important;
+}

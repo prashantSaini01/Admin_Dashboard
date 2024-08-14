@@ -1,0 +1,122 @@
+/* General Page Layout */
+.main-height {
+    height: 100vh !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+}
+
+.signup-card {
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 80%; /* Adjust width as needed */
+    max-width: 600px; /* Optional: Set a maximum width */
+    margin: 0 auto; /* Center align the card */
+}
+
+.signup-left-card, .signup-right-card {
+    height: 100%;
+}
+
+.main-content {
+    padding-top: 5vh;
+}
+
+.signup-right-card {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/003/689/228/original/online-registration-or-sign-up-login-for-account-on-smartphone-app-user-interface-with-secure-password-mobile-application-for-ui-web-banner-access-cartoon-people-illustration-vector.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Divider Styles */
+.divider {
+    position: relative;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.divider .line {
+    height: 1px;
+    background-color: #ced4da;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.divider .text {
+    display: inline-block;
+    background-color: white;
+    padding: 0 10px;
+    color: #6c757d;
+    position: relative;
+    z-index: 1;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Form Control Styles */
+.form-control {
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: 2px solid #ced4da !important;
+    border-radius: 0 !important;
+    padding-left: 5px !important;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #495057 !important;
+    box-shadow: none !important;
+}
+
+/* Button Styles */
+.btn-outline-dark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: #6c757d;
+    color: #495057;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-outline-dark:hover {
+    background-color: #495057;
+    color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .main-height {
+        height: auto !important;
+    }
+
+    .signup-card {
+        height: auto;
+        margin: 20px;
+    }
+
+    .signup-left-card, .signup-right-card {
+        height: auto;
+    }
+
+    .main-content {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .divider .text {
+        font-size: 12px;
+        padding: 0 8px;
+    }
+
+    .form-control {
+        padding-left: 3px !important;
+    }
+}
